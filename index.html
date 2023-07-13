@@ -26,7 +26,7 @@
          display: flex;
          justify-content: space-around;
          align-items: center;
-         height: 80px;
+         height: 70px;
          background-color: rgb(7 7 63);
       }
 
@@ -80,6 +80,7 @@
       .secondSection{
          max-width: 80vw;
          margin: auto;
+         height: 90vh;
       }
       main hr{
          border: 0;
@@ -91,9 +92,16 @@
       .secondSection h2{
          font-size: 1.9rem;
       }
-      .text-gery{
-         color: grey;
+      .thirdsection h2{
+         font-size: 1.9rem;
       }
+      .thirdsection{
+         max-width: 80vw;
+         margin: auto;
+         height: 40vh;
+      }
+
+
    </style>
 </head>
 
@@ -105,9 +113,9 @@
          <div class="left">Roshan's Portfolio</div>
          <div class="right">
             <ul>
-               <li><a href="/">Home</a></li>
-               <li><a href="/">About</a></li>
-               <li><a href="/">Services</a></li>
+               <li><a href="#HOME">Home</a></li>
+               <li><a href="#About">About</a></li>
+               <li><a href="#SKILLS">Skills</a></li>
                <li><a href="/">Projects</a></li>
                <li><a href="/">Contect Me</a></li>
             </ul>
@@ -118,21 +126,55 @@
    </header>
 
    <main>
-      <section class="firstsection">
+      <section class="firstsection" id="Home">
          <div class="leftsection">
             Hi, My Name is <span class="purple
             ">Roshan</span>
             <div>and I am a passionate </div>
             <span id="element"></span>
-
-
          </div>
          <div class="rightsection"><img src="bg.png" alt="Logo"></div>
       </section>
       <hr>
-      <section class="secondSection"><h2>Work Experience</h2></section>
-      <span class="text-grey">I am a fressor Right Now and serching for Job> </span>
+      <section class="secondSection">
+         <h2>About</h2>
+         <hr>
+         <div id="About">
+            <p>
+               Hello, everyone! My name is <strong>ROSHAN</strong>, and I'm currently pursuing my education as a college student. I'm thrilled to have the opportunity to share a bit about myself with all of you.
+
+I'm enrolled in <strong>IIIT BHAGALPUR</strong> and working towards my degree in B.TECH in CSE. I chose this field because it aligns with my passion for tech industries.
+
+Throughout my academic journey, I've been actively involved in various extracurricular activities and student organizations. For instance, I have been a member of CODING CLUB where I have had the chance to collaborate with like-minded individuals and contribute to causes that matter to me. These experiences have not only allowed me to develop my leadership and teamwork skills but also provided me with a platform to pursue my interests outside the classroom.
+
+In terms of my academic pursuits, I'm particularly interested in AI & ML. Additionally, I enjoy exploring interdisciplinary subjects that broaden my perspective and help me make connections between different fields.
+
+Apart from my studies, I also enjoy reading, cricket and music etc. These hobbies provide me with a well-rounded perspective and serve as a great way to relax and recharge.
+
+As a college student, I understand the value of time management, organization, and striking a balance between my academic responsibilities and personal life. It can be challenging at times, but I believe that through determination and perseverance, I can make the most of my college experience.
+
+I'm excited to connect with fellow college students, share experiences, learn from others, and embark on this journey of personal and intellectual growth together. If you have any questions or want to chat about anything related to college life, feel free to reach out. Let's make the most of our time in college and create memorable experiences!
+
+Thank you for taking the time to read my introduction. I look forward to getting to know all of you better!
+            </p>
+         </div>
+      
+      </section>
+      <hr>
+      
+      <section class="thirdsection" id="SKILLS">
+         <h2>SKILLS</h2>
+         <ul style="list-style-type:none;">
+            <li>C</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+      </section>
    </main>
+
+
    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
    <script>
       var typed = new Typed('#element', {
